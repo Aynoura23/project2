@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+body {  font-family: "Open Sans", sans-serif; }
+ul { list-style: none; }
+a{text-decoration: none;}
+.section-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+.section-title{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.section-header .line{
+    display: block;
+    width: 100px;
+    margin: auto;
+    height: 2px;
+    background-color: #e33058;
+}
+.section-header:hover .line{
+    width: 150px;
+}
+/*header..............................*/
+.header{ padding: 40px 0;}
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+  padding: 20px 3px;
+}
+header nav {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+  .header-content ul li {
+    display: inline-block;
+    padding: 0 40px;  
+}
+ul li a  { color:#e33058 }
+header nav .form i {
+    color:#e33058;
+    font-size: 25px;
+}
+/*home............................*/
+.home{margin-top: 2px;}
+.home-content{
+    height: 70vh;
+    background-color: #1f283b;
+}
+.home-content-img1{
+    width: 14%;
+    margin-left: 60%;
+    padding:50px ;
+  }
+.home-content-title{
+    margin-top: -20%;
+    margin-left: 20px;
+    font-size: 44px;
+    font-weight: 500;
+    color:#fff;
+}
+  .home-content-but1{
+    width: 120px;
+    height: 30px;
+    border: 2px solid #e33058;
+    border-radius: 20px;
+    background-color: #e33058;
+    color: #fff;
+    margin: 50px  40px;
+  }
+  /*portfolio.....................................*/
+  .portfolio{ padding: 40px 0px;}
+  .portfolio-content ,.portfolio-content2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .portfolio-item{ position: relative;}
+  .portfolio-item h2{
+    font-size: 30px;
+  }
+  .but-icon{
+    position: absolute;
+    top: 90%;
+    left: 72%;
+    border: 1px solid #1f283b;
+    background-color: #1f283b;
+    color:#e33058;
+    overflow: hidden;
+    opacity: 0;
+  }
+  .but-icon:hover{
+    overflow: visible;
+    opacity: 1;
+  }
+  .portfolio-item.par1 {
+     width: 500px;
+     height: 250px;
+     background-color: #1f283b;
+     color: #fff;
+  }
+   .portfolio-item .par2 i {
+    padding-left: 5px;
+    padding-top: 10px;
+    font-size: 50px;
+    color: #e33058;
+   }
+  .portfolio-item .par2 .title{
+    padding-left: 60px;
+    margin-top: -7%;
+  }
+  .portfolio-item .par2 span{
+    margin-left: 65px;
+    padding-top: -2%;
+    position: relative;
+  }
+  .portfolio-item-text{
+    text-align: start;
+    padding-top: 25px;
+    padding: 25px 15px;
+    line-height: 30px;
+  }
+  .portfolio-item-line{
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    text-align: right;
+  }
+  .portfolio-item-line span{
+    display: inline-block;
+    width:60px;
+    height: 2px;
+    background:#e33058;
+    margin-left: 2px;
+}
+.portfolio-content2{ padding: 20px 0;}
+.portfolio-content2.item{ transition: 0.5s;}
+.portfolio-content2.item:hover{transform:scale(1.1)}
+/* products........................................... */
+.products{padding: 10px 0px;}
+.list-product{
+  display: flex;
+  justify-content: center;
+}
+.list-product li{ margin: 15px 25px;}
+.products-items{
+display: grid;
+grid-template-columns: repeat(3,2fr);
+grid-gap:25px;
+margin: 25px 0px;
+}
+.product-img{position: relative;}
+.product-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform:scale(0);
+  opacity: 1;
+  transition: 0.5s;
+}
+.product-item:hover .product-overlay{ transform: scale(1.1);}
+.product-overlay ul{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.product-overlay ul li{
+  width: 40px;
+  height: 40px;
+  background-color: #e33058;
+  display: inline-block;
+  text-align: center;
+}
+.product-overlay ul li i{
+  color:#fff;
+  line-height: 40px;
+}
+.product-item i.active{
+  color: yellow;
+  margin-top: 20px;
+}
+.product-info span{
+  display: block;
+  margin: 2px 0;
+}
+.product-info i{
+  margin-top: 9px;
+}
